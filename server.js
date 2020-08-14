@@ -21,7 +21,7 @@ app.use(cors({ optionSuccessStatus: 200 })); // some legacy browsers choke on 20
 app.use(express.static('public'));
 
 app.get('/api/whoami', (req, res) => {
-    var ipadress = req.clientIp;
+    var ipaddress = req.clientIp;
     var language = req.acceptsLanguages();
     var software = req.get('User-Agent');
     res.json({
